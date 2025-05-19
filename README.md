@@ -109,6 +109,13 @@ External associated and recommended crates:
 
 ## Installation
 
+Before Compile the package following ENV vars should be set:
+
+```
+MKL_DIR ; // default is C:\\Program Files (x86)\\IntelSWTools\\compilers_and_libraries_2020.4.311
+SUITESPARSE_INCLUDE_DIR // default is: C:\\githubs\\SuiteSparse\\install\\include\\suitesparse
+SUITESPARSE_LIBRARY_DIR // default is: C:\\githubs\\SuiteSparse\\install\\lib
+```
 Russell requires some non-Rust libraries (e.g., [OpenBLAS](https://github.com/OpenMathLib/OpenBLAS), [Intel MKL](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html), [MUMPS](https://mumps-solver.org), [SuiteSparse](https://github.com/DrTimothyAldenDavis/SuiteSparse)) to achieve the max performance. These libraries can be installed as explained in each subsection next.
 
 After installing the dependencies, you may add each crate using:
